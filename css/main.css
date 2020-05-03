@@ -168,7 +168,6 @@ li {
     flex-direction: column;
     padding-top: 3em; }
     .hero .hero-inner h2 {
-      width: 60%;
       color: var(--clr-white);
       letter-spacing: 2px; }
   .hero .call-to-action {
@@ -423,6 +422,17 @@ footer {
         transition: transform 250ms ease-in-out;
         transform-origin: left; }
       .top-header .nav-tab .nav-list a:focus {
-        color: #fc718f; } }
+        color: #fc718f; }
+
+  .hero .hero-inner {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3em; }
+    .hero .hero-inner h2 {
+      width: 60%;
+      color: var(--clr-white);
+      letter-spacing: 2px; } }
 
 /*# sourceMappingURL=main.css.map */

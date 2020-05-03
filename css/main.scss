@@ -218,7 +218,6 @@ li {
         flex-direction: column;
         padding-top: 3em;
         h2 {
-            width: 60%;
             color: var(--clr-white);
             letter-spacing: 2px;
         }
@@ -599,6 +598,21 @@ footer {
                 a:focus {
                     color: $main-clr-tint;
                 }
+            }
+        }
+    }
+
+    .hero {
+        .hero-inner {
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 3em;
+            h2 {
+                width: 60%;
+                color: var(--clr-white);
+                letter-spacing: 2px;
             }
         }
     }
