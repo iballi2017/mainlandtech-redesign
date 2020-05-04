@@ -153,12 +153,10 @@ li {
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
       transform-origin: right; }
-    .top-header .nav-tab .nav-link:hover::after {
+    .top-header .nav-tab .nav-link:hover::after, .top-header .nav-tab .nav-link:focus::after {
       transform: scaleX(1);
       transition: transform 250ms ease-in-out;
       transform-origin: left; }
-    .top-header .nav-tab .nav-link a:focus {
-      color: #ec0033; }
     .top-header .nav-tab .nav-link {
       color: var(--clr-white); }
 
@@ -312,6 +310,9 @@ li {
     #portfolio .portfolio-inner .portfolio-item {
       margin: 0;
       position: relative; }
+      #portfolio .portfolio-inner .portfolio-item a:focus img {
+        border: 3px solid #ec0033;
+        transition: border 250ms ease-in-out; }
       #portfolio .portfolio-inner .portfolio-item img {
         width: 100%; }
       #portfolio .portfolio-inner .portfolio-item figcaption {

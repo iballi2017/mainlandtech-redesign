@@ -198,14 +198,11 @@ li {
                 transform-origin: right;
             }
 
-            &:hover::after {
+            &:hover::after,
+            &:focus::after {
                 transform: scaleX(1);
                 transition: transform 250ms ease-in-out;
                 transform-origin: left;
-            }
-
-            a:focus {
-                color: $main-clr-secondary;
             }
         }
 
@@ -351,15 +348,6 @@ li {
         grid-gap: 20px;
     }
 
-    // .team-members-grid > div:nth-child(even),
-    .team-members-grid > div:nth-child(odd) {
-        // background-color: var(--clr-tint);
-    }
-
-    .team-members-grid > div:nth-child(even) {
-        // background-color: $main-clr-secondary;
-    }
-
     .team-members-grid > div {
         padding: 1em 0;
         img {
@@ -429,6 +417,13 @@ li {
         .portfolio-item {
             margin: 0;
             position: relative;
+
+            a:focus {
+                img {
+                    border: 3px solid $main-clr-secondary;
+                    transition: border 250ms ease-in-out;
+                }
+            }
 
             img {
                 width: 100%;
