@@ -136,9 +136,10 @@ li {
     grid-template-areas: "brand-logo brand-logo menu-button" "nav-tab nav-tab nav-tab"; }
   .top-header .menu-btn {
     grid-area: menu-button;
-    display: grid;
-    place-content: center;
-    color: #ec0033; }
+    color: #ec0033;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
   .top-header .nav-tab {
     padding: 0;
     list-style: none;

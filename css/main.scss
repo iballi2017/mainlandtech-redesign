@@ -173,9 +173,12 @@ li {
 
     .menu-btn {
         grid-area: menu-button;
-        display: grid;
-        place-content: center;
+        // display: grid;
+        // place-content: center;
         color: $main-clr-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 
     .nav-tab {
