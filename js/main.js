@@ -17,16 +17,18 @@ $(document).ready(function () {
 
     $(".card-front-view").on("click", function () {
         $(this).next().css({
-            "transform": "scaleY(1)",
-            "transition": "transform 250ms ease-in-out"
+            "transform": "scaleX(1)",
+            "transition": "transform 250ms ease-in-out",
+            "transform-origin": "left"
         })
     })
 
     $(".dismiss").on("click", function () {
         // alert("hsblb")
         $(this).parent(".card-back-view ").css({
-            "transform": "scaleY(0)",
-            "transition": "transform 250ms ease-in-out"
+            "transform": "scaleX(0)",
+            "transition": "transform 250ms ease-in-out",
+            "transform-origin": "right"
         })
 
         // $(this).parent().css({

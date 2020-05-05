@@ -226,15 +226,15 @@ li {
         font-size: 1.3em;
         color: #3d0313; }
       #what-we-do .what-we-do-inner .services li .card-back-view {
-        background-color: #ec0033;
+        background-color: rgba(0, 0, 0, 0.8);
         color: var(--clr-white);
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
-        transform: scaleY(0);
+        transform: scaleX(0);
         transition: transform 250ms ease-in-out;
-        transform-origin: bottom; }
+        transform-origin: right; }
         #what-we-do .what-we-do-inner .services li .card-back-view .service-item {
           padding: 0; }
         #what-we-do .what-we-do-inner .services li .card-back-view .fa-plus {
