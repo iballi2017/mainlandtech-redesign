@@ -264,6 +264,21 @@ li {
             color: var(--clr-white);
             letter-spacing: 2px;
         }
+
+        .hero-texts {
+            transform: translateY(-100px);
+        }
+
+        .hero-btn {
+            transform: translateY(100px);
+        }
+
+        .hero-texts-in,
+        .hero-btn-in {
+            transform: translateY(0px);
+            transition: transform 1050ms ease-in-out;
+            transition-timing-function: ease-in-out;
+        }
     }
 }
 #what-we-do {
@@ -316,25 +331,19 @@ li {
             }
 
             .service-list:nth-child(even) {
-                background-color: red;
-                opacity: 0;
-                transition: opacity 250ms ease-in-out;
-                transform: translateX(100px);
-                transition: transform 650ms ease-in-out;
+                transform: translateX(20px);
             }
             .service-list:nth-child(odd) {
-                background-color: yellowgreen;
-                opacity: 0;
-                transition: opacity 250ms ease-in-out;
-                transform: translateX(-100px);
-                transition: transform 650ms ease-in-out;
+                transform: translateX(-20px);
             }
 
             .servise-list-intersect {
-                opacity: 1;
-                transition: opacity 250ms ease-in-out;
                 transform: translateX(0px);
+            }
+            .service-list,
+            .service-list-intersect {
                 transition: transform 650ms ease-in-out;
+                transition-timing-function: ease-in-out;
             }
         }
     }
@@ -356,6 +365,22 @@ li {
             align-self: center;
             font-size: 1.5rem;
         }
+
+        .man-computer-img {
+            transform: translateX(-10px);
+        }
+        .about-us-texts {
+            transform: translateX(10px);
+        }
+
+        .about-us-intersect {
+            transform: translateX(0px);
+        }
+        .man-computer-img,
+        .about-us-texts {
+            transition: transform 650ms ease-in-out;
+            transition-timing-function: ease-in-out;
+        }
     }
 }
 
@@ -371,24 +396,39 @@ li {
         grid-gap: 20px;
     }
 
-    .team-members-grid > div {
-        padding: 1em 0;
-        img {
-            width: 150px;
-            // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-            clip-path: circle(40% at 50% 50%);
-        }
-        p {
-            margin: 0;
-        }
+    .team-members-grid {
+        .team-member-card {
+            padding: 1em 0;
+            img {
+                width: 150px;
+                clip-path: circle(40% at 50% 50%);
+            }
+            p {
+                margin: 0;
+            }
 
-        .member-name {
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
+            .member-name {
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
 
-        .title {
-            font-weight: 500;
+            .title {
+                font-weight: 500;
+            }
+        }
+        .team-member-card-animate:nth-child(odd) {
+            transform: translateX(10px);
+        }
+        .team-member-card-animate:nth-child(even) {
+            transform: translateX(-10px);
+        }
+        .team-member-card-animate-alt {
+            transform: translateX(0px);
+        }
+        .team-member-card-animate,
+        .team-member-card-animate-alt {
+            transition: transform 650ms ease-in-out;
+            transition-timing-function: ease-in-out;
         }
     }
 }
