@@ -242,6 +242,23 @@ li {
           margin: 0.3em;
           cursor: pointer;
           color: var(--clr-white); }
+    #what-we-do .what-we-do-inner .services .service-list:nth-child(even) {
+      background-color: red;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+      transform: translateX(100px);
+      transition: transform 650ms ease-in-out; }
+    #what-we-do .what-we-do-inner .services .service-list:nth-child(odd) {
+      background-color: yellowgreen;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+      transform: translateX(-100px);
+      transition: transform 650ms ease-in-out; }
+    #what-we-do .what-we-do-inner .services .servise-list-intersect {
+      opacity: 1;
+      transition: opacity 250ms ease-in-out;
+      transform: translateX(0px);
+      transition: transform 650ms ease-in-out; }
 
 #about-us {
   padding-top: 4vw; }

@@ -69,3 +69,26 @@ const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver
 }, sectionOneOptions)
 
 sectionOneObserver.observe(sectionOne)
+
+
+
+const serviceList = document.querySelectorAll(".service-list");
+const options = {
+    rootMargin: "550px 0px 0px 0px"
+};
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        // console.log(entry.target)
+        if (!entry.isIntersecting) {
+            return
+        }
+        entry.target.classList.remove("service-list")
+        entry.target.classList.add("servise-list-intersect")
+    })
+}, options)
+
+serviceList.forEach(serviceItem => {
+    observer.observe(serviceItem);
+})
+
+console.log("Hello Programmers!")
