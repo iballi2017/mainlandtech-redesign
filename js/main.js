@@ -24,19 +24,12 @@ $(document).ready(function () {
     })
 
     $(".dismiss").on("click", function () {
-        // alert("hsblb")
         $(this).parent(".card-back-view ").css({
             "transform": "scaleX(0)",
             "transition": "transform 250ms ease-in-out",
             "transform-origin": "right"
         })
 
-        // $(this).parent().css({
-        //     "transform": "scaleY(0)",
-        //     "transition": "transform 250ms ease-in-out"
-        // })
-
-        // $(this).parent().toggle(1000)
     })
 
     $(".form-custom-control").focus(function () {
@@ -50,7 +43,7 @@ $(document).ready(function () {
 })
 
 
-
+// animate header element on scroll
 const nav = document.querySelector(".top-header");
 const sectionOne = document.querySelector(".hero");
 const sectionOneOptions = {
@@ -69,28 +62,6 @@ const sectionOneObserver = new IntersectionObserver((entries, sectionOneObserver
 }, sectionOneOptions)
 
 sectionOneObserver.observe(sectionOne)
-
-
-
-// animate Service list on "what we do section"
-const serviceList = document.querySelectorAll(".service-list");
-const options = {
-    rootMargin: "550px 0px 0px 0px"
-};
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        // console.log(entry.target)
-        if (!entry.isIntersecting) {
-            return
-        }
-        entry.target.classList.remove("service-list")
-        entry.target.classList.add("service-list-intersect")
-    })
-}, options)
-
-serviceList.forEach(serviceItem => {
-    observer.observe(serviceItem);
-})
 
 
 
@@ -115,6 +86,28 @@ const heroObserver = new IntersectionObserver((entries, heroObserver) => {
 
 heroObserver.observe(heroTexts)
 heroObserver.observe(heroBtn)
+
+
+// animate Service list on "what we do section"
+const serviceList = document.querySelectorAll(".service-list");
+const options = {
+    rootMargin: "550px 0px 0px 0px"
+};
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        // console.log(entry.target)
+        if (!entry.isIntersecting) {
+            return
+        }
+        entry.target.classList.remove("service-list")
+        entry.target.classList.add("service-list-intersect")
+    })
+}, options)
+
+serviceList.forEach(serviceItem => {
+    observer.observe(serviceItem);
+})
+
 
 
 //animate team-member-card

@@ -37,7 +37,6 @@ h6 {
   border: none;
   font-size: inherit;
   line-height: inherit;
-  margin: 0;
   padding: 0;
   text-align: inherit;
   font-weight: 700;
@@ -122,6 +121,8 @@ li {
 
 .brand-logo {
   grid-area: brand-logo; }
+  .brand-logo h4 {
+    margin: 1rem 0 0.6rem; }
   .brand-logo a {
     color: var(--clr-white); }
 
