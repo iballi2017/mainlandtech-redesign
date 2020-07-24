@@ -189,15 +189,105 @@ images.forEach(image => {
 })
 
 
-// submit contact us form
-// var contactForm = document.getElementById("userMessageForm");
-// contactForm.onsubmit = ($event) => {
-//     $event.preventDefault();
 
-//     var request = new XMLHttpRequest();
-//     // POST to httpbin which returns the POST data as JSON
+// main navigation links activation
+// observing main navigation active links
+const pageSections = document.querySelectorAll(".pageSection")
+const sectionOption = {
+    thresholds: 1,
+    rootMargin: "-300px"
+}
 
-//     request.open('POST', )
-// }
 
+const pageSectionObserver = new IntersectionObserver((entries, pageSectionObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        }
+        if (entry.target.id === "hero") {
+            let navLists = document.querySelectorAll(".nav-list")
+            navLists.forEach(link => {
+                if (link.id === "hero-link") {
+                    link.classList.add("active")
+                    let contactBtn = document.getElementById("contact-us-link-btn")
+                    contactBtn.classList.remove("active")
+                    for (let sibling of link.parentNode.children) {
+                        link.classList.add("active")
+                        if (sibling !== this) sibling.classList.remove('active');
+                    }
+                }
+            })
+        }
+        if (entry.target.id === "what-we-do") {
+            let navLists = document.querySelectorAll(".nav-list")
+            navLists.forEach(link => {
+                if (link.id === "what-we-do-link") {
+                    link.classList.add("active")
+                    let contactBtn = document.getElementById("contact-us-link-btn")
+                    contactBtn.classList.remove("active")
+                    for (let sibling of link.parentNode.children) {
+                        link.classList.add("active")
+                        if (sibling !== this) sibling.classList.remove('active');
+                    }
+                }
+            })
+        }
+        if (entry.target.id === "about-us") {
+            const navLists = document.querySelectorAll(".nav-list")
+            navLists.forEach(link => {
+                if (link.id === "about-us-link") {
+                    link.classList.add("active")
+                    let contactBtn = document.getElementById("contact-us-link-btn")
+                    contactBtn.classList.remove("active")
+                    for (let sibling of link.parentNode.children) {
+                        link.classList.add("active")
+                        if (sibling !== this) sibling.classList.remove('active');
+                    }
+                }
+            })
+        }
+        if (entry.target.id === "portfolio") {
+            const navLists = document.querySelectorAll(".nav-list")
+            navLists.forEach(link => {
+                if (link.id === "portfolio-link") {
+                    link.classList.add("active")
+                    let contactBtn = document.getElementById("contact-us-link-btn")
+                    contactBtn.classList.remove("active")
+                    for (let sibling of link.parentNode.children) {
+                        link.classList.add("active")
+                        if (sibling !== this) sibling.classList.remove('active');
+                    }
+                }
+            })
+        }
+        if (entry.target.id === "contact-us") {
+            let contactBtn = document.getElementById("contact-us-link-btn")
+            contactBtn.classList.add("active")
+            let navLists = document.querySelectorAll(".nav-list")
+            navLists.forEach(link => {
+                // if (link.id === "portfolio-link") {
+                link.classList.remove("active")
+                // for (let sibling of link.parentNode.children) {
+                //     link.classList.add("active")
+                //     if (sibling !== this) sibling.classList.remove('active');
+                //     }
+                // }
+            })
+        }
+    })
+}, sectionOption)
+pageSections.forEach(section => {
+    pageSectionObserver.observe(section)
+})
+
+
+
+// jquery counter plugin
+// < !--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
 

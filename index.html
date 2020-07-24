@@ -1,518 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link
-      rel="icon"
-      href="./images/favicon.png"
-      type="image/gif"
-      sizes="16x16"
-    />
-    <title>
-      Web Mobile Design Nigeria | Business Support | Network Infrastructure |
-      Web Designers in Lagos - MainlandTech
-    </title>
-    <!-- font family -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="top-header">
-      <nav class="main-nav wrapper">
-        <div class="brand-logo">
-          <h4>
-            <a href="/">
-              <!-- MainlandTech -->
-              <img data-src="./images/brandlogo.png" alt="MainlandTech" />
-            </a>
-          </h4>
-        </div>
 
-        <ul class="nav-tab">
-          <li class="nav-list">
-            <a href="#" class="nav-link">Home</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="icon" href="./images/favicon.png" type="image/gif" sizes="16x16" />
+  <title>
+    Web Mobile Design Nigeria | Business Support | Network Infrastructure |
+    Web Designers in Lagos - MainlandTech
+  </title>
+  <!-- Jquery counter plugin -->
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <!-- font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="top-header">
+    <nav class="main-nav wrapper">
+      <div class="brand-logo">
+        <h4>
+          <a href="/">
+            <!-- MainlandTech -->
+            <img data-src="./images/brandlogo.png" alt="MainlandTech" />
+          </a>
+        </h4>
+      </div>
+
+      <ul class="nav-tab">
+        <li class="nav-list" id="hero-link">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list" id="what-we-do-link">
+          <a href="#what-we-do" class="nav-link">What we do</a>
+        </li>
+        <li class="nav-list" id="about-us-link">
+          <a href="#about-us" class="nav-link">About us</a>
+        </li>
+        <li class="nav-list" id="portfolio-link">
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="">
+          <a href="#contact-us" class="call-to-action text-center" id="contact-us-link-btn">
+            Contact us
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fas fa-ellipsis-v menu-btn-icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero pageSection">
+      <div class="wrapper hero-inner">
+        <h2 class="hero-texts">
+          Getting a quality website is not an expense rather an investment
+        </h2>
+        <a href="#contact-us" class="call-to-action text-center hero-btn">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+    <section id="what-we-do" class="pageSection">
+      <div class="wrapper what-we-do-inner">
+        <ul class="services">
+          <li class="service-list text-center">
+            <div class="card-front-view">
+              <i class="fas fa-pencil-ruler fa-3x"></i>
+              <p class="card-title">Design</p>
+              <p class="card-body">
+                We work closely with our clients to create aesthetically
+                designed websites and other materials (e.g Logo, business
+                cards, banners and flyerse.t.c)
+              </p>
+            </div>
+            <div class="card-back-view text-left card-shadow">
+              <div class="dismiss">
+                <i class="fas fa-plus fa-2x"></i>
+              </div>
+              <ul class="service-item text-center">
+                <li>UI/UX Design,</li>
+                <li>Graphics Design</li>
+              </ul>
+            </div>
           </li>
-          <li class="nav-list">
-            <a href="#what-we-do" class="nav-link">What we do</a>
+          <li class="service-list text-center">
+            <div class="card-front-view">
+              <i class="fas fa-mobile-alt fa-3x"></i>
+              <p class="card-title">Mobile</p>
+              <p>
+                Do your products and services need to be available at
+                fingertips of your customers?, but no knowledge of App
+                development? We are your solution.
+              </p>
+            </div>
+
+            <div class="card-back-view text-left card-shadow">
+              <div class="dismiss">
+                <i class="fas fa-plus fa-2x"></i>
+              </div>
+              <ul class="service-item text-center">
+                <li>Mobile App Design,</li>
+                <li>Andriod App Development,</li>
+                <li>IOS App Development,</li>
+                <li>IOS/Android App Deployment</li>
+              </ul>
+            </div>
           </li>
-          <li class="nav-list">
-            <a href="#about-us" class="nav-link">About us</a>
+          <li class="service-list text-center">
+            <div class="card-front-view">
+              <i class="fas fa-globe fa-3x"></i>
+              <p class="card-title">Web</p>
+              <p>
+                To the growth of any business, you can leverage on the
+                proficiency of our unique team to bring your ideas to life.
+              </p>
+            </div>
+
+            <div class="card-back-view text-left card-shadow">
+              <div class="dismiss">
+                <i class="fas fa-plus fa-2x"></i>
+              </div>
+              <ul class="service-item text-center">
+                <li>Web Application Development,</li>
+                <li>E-Commerce Development,</li>
+                <li>Tech Consulting,</li>
+                <li>Website Maintenance & Support</li>
+              </ul>
+            </div>
           </li>
-          <li class="nav-list">
-            <a href="#portfolio" class="nav-link">Portfolio</a>
+          <li class="service-list text-center">
+            <div class="card-front-view">
+              <i class="fas fa-headset fa-3x"></i>
+              <p class="card-title">Business Support</p>
+              <p>
+                We have the resources available for you to take your business
+                to the next level.
+              </p>
+            </div>
+
+            <div class="card-back-view text-left card-shadow">
+              <div class="dismiss">
+                <i class="fas fa-plus fa-2x"></i>
+              </div>
+              <ul class="service-item text-center">
+                <li>HR Solutions (Attendance & Time tracking),</li>
+                <li>Business Advisory,</li>
+                <li>Digital Marketing</li>
+              </ul>
+            </div>
           </li>
-          <li class="">
-            <a href="#contact-us" class="call-to-action text-center">
-              Contact us
-            </a>
+          <li class="service-list text-center">
+            <div class="card-front-view">
+              <i class="fas fa-wifi fa-3x"></i>
+              <p class="card-title">Network & Infrastructure</p>
+              <p>
+                We have a team of skilled Network Engineers available to cater
+                to your business needs.
+              </p>
+            </div>
+
+            <div class="card-back-view text-left card-shadow">
+              <div class="dismiss">
+                <i class="fas fa-plus fa-2x"></i>
+              </div>
+              <ul class="service-item text-center">
+                <li>Cabling & Networking,</li>
+                <li>PABX & Telecoms</li>
+              </ul>
+            </div>
           </li>
         </ul>
 
-        <div class="menu-btn">
-          <i class="fas fa-ellipsis-v menu-btn-icon"></i>
+        <h2 class="highlight section-lg-texts">
+          Your website deserve the best because its the internet advertising
+          bilboard for your company
+        </h2>
+      </div>
+    </section>
+
+    <section id="about-us" class="pageSection">
+      <div class="wrapper">
+        <div class="section-title-container">
+          <h2 class="section-title">About Us</h2>
         </div>
-      </nav>
-    </header>
+        <div class="about-us-inner">
+          <img data-src="./images/man-computer-pink.png" alt="pink image of a man operating a computer system"
+            class="man-computer-img" />
 
-    <main>
-      <section class="hero">
-        <div class="wrapper hero-inner">
-          <h2 class="hero-texts">
-            Getting a quality website is not an expense rather an investment
-          </h2>
-          <a href="#contact-us" class="call-to-action text-center hero-btn">
-            Contact Us
-          </a>
+          <p class="highlight section-texts about-us-texts">
+            We are a team of experienced and proficient developers with
+            outstanding work ethics to provide our estimable clients with
+            remarkable website and mobile applications for businesses
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="what-we-do">
-        <div class="wrapper what-we-do-inner">
-          <ul class="services">
-            <li class="service-list text-center">
-              <div class="card-front-view">
-                <i class="fas fa-pencil-ruler fa-3x"></i>
-                <p class="card-title">Design</p>
-                <p class="card-body">
-                  We work closely with our clients to create aesthetically
-                  designed websites and other materials (e.g Logo, business
-                  cards, banners and flyerse.t.c)
-                </p>
-              </div>
-              <div class="card-back-view text-left card-shadow">
-                <div class="dismiss">
-                  <i class="fas fa-plus fa-2x"></i>
-                </div>
-                <ul class="service-item text-center">
-                  <li>UI/UX Design,</li>
-                  <li>Graphics Design</li>
-                </ul>
-              </div>
-            </li>
-            <li class="service-list text-center">
-              <div class="card-front-view">
-                <i class="fas fa-mobile-alt fa-3x"></i>
-                <p class="card-title">Mobile</p>
-                <p>
-                  Do your products and services need to be available at
-                  fingertips of your customers?, but no knowledge of App
-                  development? We are your solution.
-                </p>
-              </div>
-
-              <div class="card-back-view text-left card-shadow">
-                <div class="dismiss">
-                  <i class="fas fa-plus fa-2x"></i>
-                </div>
-                <ul class="service-item text-center">
-                  <li>Mobile App Design,</li>
-                  <li>Andriod App Development,</li>
-                  <li>IOS App Development,</li>
-                  <li>IOS/Android App Deployment</li>
-                </ul>
-              </div>
-            </li>
-            <li class="service-list text-center">
-              <div class="card-front-view">
-                <i class="fas fa-globe fa-3x"></i>
-                <p class="card-title">Web</p>
-                <p>
-                  To the growth of any business, you can leverage on the
-                  proficiency of our unique team to bring your ideas to life.
-                </p>
-              </div>
-
-              <div class="card-back-view text-left card-shadow">
-                <div class="dismiss">
-                  <i class="fas fa-plus fa-2x"></i>
-                </div>
-                <ul class="service-item text-center">
-                  <li>Web Application Development,</li>
-                  <li>E-Commerce Development,</li>
-                  <li>Tech Consulting,</li>
-                  <li>Website Maintenance & Support</li>
-                </ul>
-              </div>
-            </li>
-            <li class="service-list text-center">
-              <div class="card-front-view">
-                <i class="fas fa-headset fa-3x"></i>
-                <p class="card-title">Business Support</p>
-                <p>
-                  We have the resources available for you to take your business
-                  to the next level.
-                </p>
-              </div>
-
-              <div class="card-back-view text-left card-shadow">
-                <div class="dismiss">
-                  <i class="fas fa-plus fa-2x"></i>
-                </div>
-                <ul class="service-item text-center">
-                  <li>HR Solutions (Attendance & Time tracking),</li>
-                  <li>Business Advisory,</li>
-                  <li>Digital Marketing</li>
-                </ul>
-              </div>
-            </li>
-            <li class="service-list text-center">
-              <div class="card-front-view">
-                <i class="fas fa-wifi fa-3x"></i>
-                <p class="card-title">Network & Infrastructure</p>
-                <p>
-                  We have a team of skilled Network Engineers available to cater
-                  to your business needs.
-                </p>
-              </div>
-
-              <div class="card-back-view text-left card-shadow">
-                <div class="dismiss">
-                  <i class="fas fa-plus fa-2x"></i>
-                </div>
-                <ul class="service-item text-center">
-                  <li>Cabling & Networking,</li>
-                  <li>PABX & Telecoms</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-
-          <h2 class="highlight section-lg-texts">
-            Your website deserve the best because its the internet advertising
-            bilboard for your company
-          </h2>
+    <section class="our-team wrapper pageSection">
+      <div class="text-center">
+        <div class="section-title-container text-center">
+          <h2 class="section-title">Our team</h2>
+          <h6 class="highlight">
+            You have "the next big app idea"?, we have a great team to develop
+            it
+          </h6>
         </div>
-      </section>
+        <div class="wrapper"></div>
 
-      <section id="about-us">
-        <div class="wrapper">
-          <div class="section-title-container">
-            <h2 class="section-title">About Us</h2>
+        <div class="team-members-grid">
+          <div class="card-shadow team-member-card team-member-card-animate">
+            <img data-src="./images/ib.png" alt="Ibrahim Alli's image" />
+            <div>
+              <p class="member-name">
+                Alli Ibrahim
+              </p>
+              <p class="title">Fontend Developer</p>
+            </div>
           </div>
-          <div class="about-us-inner">
-            <img
-              data-src="./images/man-computer-pink.png"
-              alt="pink image of a man operating a computer system"
-              class="man-computer-img"
-            />
-
-            <p class="highlight section-texts about-us-texts">
-              We are a team of experienced and proficient developers with
-              outstanding work ethics to provide our estimable clients with
-              remarkable website and mobile applications for businesses
-            </p>
+          <div class="card-shadow team-member-card team-member-card-animate">
+            <img data-src="./images/ay.png" alt="Ayokunle's image" />
+            <div>
+              <p class="member-name">
+                Ayokunle
+              </p>
+              <p class="title">Backend Developer</p>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="our-team wrapper">
-        <div class="text-center">
-          <div class="section-title-container text-center">
-            <h2 class="section-title">Our team</h2>
-            <h6 class="highlight">
-              You have "the next big app idea"?, we have a great team to develop
-              it
-            </h6>
+          <div class="card-shadow team-member-card team-member-card-animate">
+            <img data-src="./images/dele.png" alt="Dele Agboola's image" />
+            <div>
+              <p class="member-name">
+                Dele Agboola
+              </p>
+              <p class="title">Tech Director</p>
+            </div>
           </div>
-          <div class="wrapper"></div>
-
-          <div class="team-members-grid">
-            <div class="card-shadow team-member-card team-member-card-animate">
-              <img data-src="./images/ib.png" alt="Ibrahim Alli's image" />
-              <div>
-                <p class="member-name">
-                  Alli Ibrahim
-                </p>
-                <p class="title">Fontend Developer</p>
-              </div>
+          <div class="card-shadow team-member-card team-member-card-animate">
+            <img data-src="./images/tobi.png" alt="Tobi Akinola's image" />
+            <div>
+              <p class="member-name">
+                Akinola Tobi
+              </p>
+              <p class="title">UI Designer</p>
             </div>
-            <div class="card-shadow team-member-card team-member-card-animate">
-              <img data-src="./images/ay.png" alt="Ayokunle's image" />
-              <div>
-                <p class="member-name">
-                  Ayokunle
-                </p>
-                <p class="title">Backend Developer</p>
-              </div>
+          </div>
+          <div class="card-shadow team-member-card team-member-card-animate">
+            <img data-src="./images/ay.png" alt="Ayokunle's image" />
+            <div>
+              <p class="member-name">
+                Andu Ekeng
+              </p>
+              <p class="title">Business Developer</p>
             </div>
-            <div class="card-shadow team-member-card team-member-card-animate">
-              <img data-src="./images/dele.png" alt="Dele Agboola's image" />
-              <div>
-                <p class="member-name">
-                  Dele Agboola
-                </p>
-                <p class="title">Tech Director</p>
-              </div>
-            </div>
-            <div class="card-shadow team-member-card team-member-card-animate">
-              <img data-src="./images/tobi.png" alt="Tobi Akinola's image" />
-              <div>
-                <p class="member-name">
-                  Akinola Tobi
-                </p>
-                <p class="title">UI Designer</p>
-              </div>
-            </div>
-            <div class="card-shadow team-member-card team-member-card-animate">
-              <img data-src="./images/ay.png" alt="Ayokunle's image" />
-              <div>
-                <p class="member-name">
-                  Andu Ekeng
-                </p>
-                <p class="title">Business Developer</p>
-              </div>
-            </div>
-            <div class="card-shadow team-member-card team-member-card-animate">
-              <img data-src="./images/ib.png" alt="Alli Ibrahim's image" />
-              <div>
-                <p class="member-name">
-                  Enebeli Kelvin
-                </p>
-                <p class="title">Graphics Designer</p>
-              </div>
+          </div>
+          <div class="card-shadow team-member-card team-member-card-animate">
+            <img data-src="./images/ib.png" alt="Alli Ibrahim's image" />
+            <div>
+              <p class="member-name">
+                Enebeli Kelvin
+              </p>
+              <p class="title">Graphics Designer</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="why-choose-us">
-        <div class="wrapper">
-          <div class="why-choose-us-inner-grid">
-            <div class="image-area">
-              <img
-                data-src="./images/responsiveness.png"
-                alt="pink computer image"
-              />
-            </div>
-            <div class="text-area">
-              <div class="section-title-container">
-                <h2 class="section-title">Why Choose Us</h2>
+    <section class="why-choose-us pageSection">
+      <div class="wrapper">
+        <div class="why-choose-us-inner-grid">
+          <div class="image-area">
+            <img data-src="./images/responsiveness.png" alt="pink computer image" />
+          </div>
+          <div class="text-area">
+            <div class="section-title-container">
+              <h2 class="section-title">Why Choose Us</h2>
 
-                <ul class="quality-items">
-                  <li class="qualities">Efficient Technical Support</li>
-                  <li class="qualities">Experience Team</li>
-                  <li class="qualities">Appropriate Delivery</li>
-                </ul>
-              </div>
+              <ul class="quality-items">
+                <li class="qualities">Efficient Technical Support</li>
+                <li class="qualities">Experience Team</li>
+                <li class="qualities">Appropriate Delivery</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="portfolio">
-        <div class="wrapper">
-          <div class="section-title-container text-right">
-            <h2 class="section-title">Our Portfolio</h2>
+
+
+    <section id="portfolio" class="pageSection">
+      <div class="wrapper">
+        <div class="section-title-container text-right">
+          <h2 class="section-title">Our Portfolio</h2>
+        </div>
+        <div class="portfolio-inner">
+          <figure class="portfolio-item">
+            <a href="https://postmailexpress.com/" target="_blank">
+              <img data-src="./images/postmailexpress.png" alt="postmailexpress thumbnail" />
+              <figcaption>
+                <h5>Postmail Express</h5>
+                <p>(Logistics)</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="portfolio-item">
+            <a href="https://mainlandmeals.com/" target="_blank">
+              <img data-src="./images/mainlandmeals.png" alt="mainlandmeals thumbnail" />
+              <figcaption>
+                <h5>Mainlandmeals</h5>
+                <p>(Food Web App)</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="portfolio-item">
+            <a href="https://mainlandbooks.com/" target="_blank">
+              <img data-src="./images/mainlandbooks.png" alt="mainlandbooks thumbnail" />
+              <figcaption>
+                <h5>Mainlandbooks</h5>
+                <p>(Online Book Store)</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="portfolio-item">
+            <a href="https://postmailexpress.com/" target="_blank">
+              <img data-src="./images/postmailexpress.png" alt="postmailexpress thumbnail" />
+              <figcaption>
+                <h5>Postmail Express</h5>
+                <p>(Logistics)</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="portfolio-item">
+            <a href="https://iballi2017.github.io/busiest/" target="_blank">
+              <img data-src="./images/busiest.png" alt="busiest website thumbnail" />
+              <figcaption>
+                <h5>Busiest</h5>
+                <p>(Business Consulting)</p>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="portfolio-item">
+            <a href="https://postmailexpress.com/" target="_blank">
+              <img data-src="./images/postmailexpress.png" alt="postmailexpress thumbnail" />
+              <figcaption>
+                <h5>Postmail Express</h5>
+                <p>(Logistics)</p>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+
+      <div class="wrapper success_counter">
+        <h4>Our Success in Summary</h4>
+        <div class="demo">
+          <div>Projects
+            <div class="readers">
+              <span class="counter">
+                53
+              </span>
+            </div>
           </div>
-          <div class="portfolio-inner">
-            <figure class="portfolio-item">
-              <a href="https://postmailexpress.com/" target="_blank">
-                <img
-                  data-src="./images/postmailexpress.png"
-                  alt="postmailexpress thumbnail"
-                />
-                <figcaption>
-                  <h5>Postmail Express</h5>
-                  <p>(Logistics)</p>
-                </figcaption>
-              </a>
-            </figure>
-            <figure class="portfolio-item">
-              <a href="https://mainlandmeals.com/" target="_blank">
-                <img
-                  data-src="./images/mainlandmeals.png"
-                  alt="mainlandmeals thumbnail"
-                />
-                <figcaption>
-                  <h5>Mainlandmeals</h5>
-                  <p>(Food Web App)</p>
-                </figcaption>
-              </a>
-            </figure>
-            <figure class="portfolio-item">
-              <a href="https://mainlandbooks.com/" target="_blank">
-                <img
-                  data-src="./images/mainlandbooks.png"
-                  alt="mainlandbooks thumbnail"
-                />
-                <figcaption>
-                  <h5>Mainlandbooks</h5>
-                  <p>(Online Book Store)</p>
-                </figcaption>
-              </a>
-            </figure>
-            <figure class="portfolio-item">
-              <a href="https://postmailexpress.com/" target="_blank">
-                <img
-                  data-src="./images/postmailexpress.png"
-                  alt="postmailexpress thumbnail"
-                />
-                <figcaption>
-                  <h5>Postmail Express</h5>
-                  <p>(Logistics)</p>
-                </figcaption>
-              </a>
-            </figure>
-            <figure class="portfolio-item">
-              <a href="https://iballi2017.github.io/busiest/" target="_blank">
-                <img
-                  data-src="./images/busiest.png"
-                  alt="busiest website thumbnail"
-                />
-                <figcaption>
-                  <h5>Busiest</h5>
-                  <p>(Business Consulting)</p>
-                </figcaption>
-              </a>
-            </figure>
-            <figure class="portfolio-item">
-              <a href="https://postmailexpress.com/" target="_blank">
-                <img
-                  data-src="./images/postmailexpress.png"
-                  alt="postmailexpress thumbnail"
-                />
-                <figcaption>
-                  <h5>Postmail Express</h5>
-                  <p>(Logistics)</p>
-                </figcaption>
-              </a>
-            </figure>
+          <div>CLients
+            <div class="readers">
+              <span class="counter">
+                23
+              </span>
+            </div>
+          </div>
+          <div>Sucess Rate
+            <div class="readers">
+              <span class="counter">100
+              </span><span>%</span></div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact-us">
-        <div class="wrapper">
-          <div class="section-title-container">
-            <h2 class="section-title">Contact Us</h2>
-          </div>
-          <form action="" method="post" name="userMessageForm">
-            <div class="form-flex">
-              <div class="form-grp">
-                <input
-                  class="form-custom-control"
-                  type="text"
-                  name="clientName"
-                  id="clientName"
-                />
-                <label for="clientName">Client Name</label>
-              </div>
-              <div class="form-grp">
-                <input
-                  class="form-custom-control"
-                  type="text"
-                  name="companyName"
-                  id="companyName"
-                />
-                <label for="companyName">Company Name</label>
-              </div>
-            </div>
-            <div class="form-flex">
-              <div class="form-grp">
-                <input
-                  class="form-custom-control"
-                  type="text"
-                  name="phone"
-                  id="phone"
-                />
-                <label for="phone">Phone Number</label>
-              </div>
-              <div class="form-grp">
-                <input
-                  class="form-custom-control"
-                  type="email"
-                  name="email"
-                  id="email"
-                />
-                <label for="email">Email Address</label>
-              </div>
+    <section id="contact-us" class="pageSection">
+      <div class="wrapper">
+        <div class="section-title-container">
+          <h2 class="section-title">Contact Us</h2>
+        </div>
+        <form action="" method="post" name="userMessageForm">
+          <div class="form-flex">
+            <div class="form-grp">
+              <input class="form-custom-control" type="text" name="clientName" id="clientName" />
+              <label for="clientName">Client Name</label>
             </div>
             <div class="form-grp">
-              <textarea
-                class="form-custom-control"
-                name="message"
-                id="message"
-                cols="30"
-                rows="3"
-              ></textarea>
-              <label for="message">Message</label>
+              <input class="form-custom-control" type="text" name="companyName" id="companyName" />
+              <label for="companyName">Company Name</label>
             </div>
-            <div>
-              <button type="submit" class="submit-btn">
-                Submit
-              </button>
+          </div>
+          <div class="form-flex">
+            <div class="form-grp">
+              <input class="form-custom-control" type="text" name="phone" id="phone" />
+              <label for="phone">Phone Number</label>
             </div>
-          </form>
-        </div>
-      </section>
-    </main>
+            <div class="form-grp">
+              <input class="form-custom-control" type="email" name="email" id="email" />
+              <label for="email">Email Address</label>
+            </div>
+          </div>
+          <div class="form-grp">
+            <textarea class="form-custom-control" name="message" id="message" cols="30" rows="3"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <div>
+            <button type="submit" class="submit-btn">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <div class="wrapper footer-inner">
-        <div>
-          <h6 class="brand-logo">
-            <a href="/">
-              <!-- MainlandTech -->
-              <img data-src="./images/brandlogo.png" alt="MainlandTech" />
-            </a>
-          </h6>
-          <p>
-            A team of tech geeks with a passion to devise simple & elegant
-            solutions in the areas of Web, Mobile, design, E-commerce, Network &
-            Infrastructure, Business support and Digital Marketing
-          </p>
+  <footer>
+    <div class="wrapper footer-inner">
+      <div>
+        <h6 class="brand-logo">
+          <a href="/">
+            <!-- MainlandTech -->
+            <img data-src="./images/brandlogo.png" alt="MainlandTech" />
+          </a>
+        </h6>
+        <p>
+          A team of tech geeks with a passion to devise simple & elegant
+          solutions in the areas of Web, Mobile, design, E-commerce, Network &
+          Infrastructure, Business support and Digital Marketing
+        </p>
 
-          <ul class="contact-media">
-            <li class="email">
-              <a href="mailto:admin@mainlandtech.com">admin@mainlandtech.com</a>
-            </li>
-            <li class="phone">081 887 76245</li>
-            <li class="date">
-              Mon&nbsp;-&nbsp;Fri &nbsp;9:00am &nbsp;-&nbsp;10:00pm
-            </li>
+        <ul class="contact-media">
+          <li class="email">
+            <a href="mailto:admin@mainlandtech.com">admin@mainlandtech.com</a>
+          </li>
+          <li class="phone">081 887 76245</li>
+          <li class="date">
+            Mon&nbsp;-&nbsp;Fri &nbsp;9:00am &nbsp;-&nbsp;10:00pm
+          </li>
 
-            <li>
-              <p>Social Media</p>
-              <ul class="social-icons">
-                <li>
-                  <a href="/"><i class="fab fa-facebook-square"></i></a>
-                </li>
-                <li>
-                  <a href="/"><i class="fab fa-instagram-square"></i></a>
-                </li>
-                <li>
-                  <a href="/"><i class="fab fa-twitter-square"></i></a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <p>Social Media</p>
+            <ul class="social-icons">
+              <li>
+                <a href="/"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="/"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a href="/"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-        <!-- google map -->
-        <div>
-          <div style="overflow: hidden; position: relative;">
-            <iframe
-              width="100%"
-              height="400"
-              src="https://maps.google.com/maps?hl=en&amp;q=6b, kolawole shonibare st, ilupeju, lagos+(MainlandTech Ofice Address)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe>
-            <div
-              style="
+      <!-- google map -->
+      <div>
+        <div style="overflow: hidden; position: relative;">
+          <iframe width="100%" height="400"
+            src="https://maps.google.com/maps?hl=en&amp;q=6b, kolawole shonibare st, ilupeju, lagos+(MainlandTech Ofice Address)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <div style="
                 position: absolute;
                 width: 80%;
                 bottom: 10px;
@@ -522,31 +487,49 @@
                 margin-right: auto;
                 color: #000;
                 text-align: center;
-              "
-            >
-              <small
-                style="line-height: 1.8; font-size: 0px; background: #fff;"
-              >
-                <a href="https://googlemapsembed.net/">Embed Google Map</a>
-              </small>
-            </div>
-            <style>
-              #gmap_canvas img {
-                max-width: none !important;
-                background: none !important;
-              }
-            </style>
+              ">
+            <small style="line-height: 1.8; font-size: 0px; background: #fff;">
+              <a href="https://googlemapsembed.net/">Embed Google Map</a>
+            </small>
           </div>
+          <style>
+            #gmap_canvas img {
+              max-width: none !important;
+              background: none !important;
+            }
+          </style>
         </div>
       </div>
+    </div>
 
-      <div class="text-center copyright-note">
-        <span>Copyright &copy; 2020 MainlandTech</span>
-      </div>
-    </footer>
+    <div class="text-center copyright-note">
+      <span>Copyright &copy; 2020 MainlandTech</span>
+    </div>
+  </footer>
 
-    <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- jquery counter plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="./js/plugins/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!--  -->
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
