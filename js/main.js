@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 
 // animate header element on scroll
-const nav = document.querySelector(".top-header");
+const nav = document.querySelector(".top-header");;
 const sectionOne = document.querySelector(".hero");
 const sectionOneOptions = {
     rootMargin: "-600px 0px 0px 0px"
@@ -187,5 +187,17 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 images.forEach(image => {
     imgObserver.observe(image)
 })
+
+
+// submit contact us form
+// var contactForm = document.getElementById("userMessageForm");
+// contactForm.onsubmit = ($event) => {
+//     $event.preventDefault();
+
+//     var request = new XMLHttpRequest();
+//     // POST to httpbin which returns the POST data as JSON
+
+//     request.open('POST', )
+// }
 
 

@@ -176,8 +176,6 @@ li {
 
     .menu-btn {
         grid-area: menu-button;
-        // display: grid;
-        // place-content: center;
         color: $main-clr-secondary;
         display: flex;
         align-items: center;
@@ -522,7 +520,6 @@ li {
 #contact-us {
     padding-top: 4vw;
     form {
-        // background-color: red;
         width: 100%;
     }
     .form-flex {
@@ -568,6 +565,7 @@ li {
         font-size: 1rem;
         color: var(--clr-white);
         border: none;
+        cursor: pointer;
 
         &:hover {
             background-color: $main-clr-secondary;
