@@ -50,9 +50,9 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         dots: false,
-        autoplay: true,
-        autoplayTimeout: 7000,
-        autoplaySpeed: 1400,
+        // autoplay: true,
+        // autoplayTimeout: 7000,
+        // autoplaySpeed: 1400,
         responsive: {
             0: {
                 items: 1,
