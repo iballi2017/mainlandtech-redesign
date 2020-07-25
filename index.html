@@ -17,6 +17,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="./css/owl_carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl_carousel/owl.theme.default.min.css">
+  <!-- custom css -->
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -54,7 +58,9 @@
       </ul>
 
       <div class="menu-btn">
-        <i class="fas fa-ellipsis-v menu-btn-icon"></i>
+        <!-- <i class="fas fa-ellipsis-v menu-btn-icon"></i> -->
+        <i class="fas fa-bars menu-btn-icon"></i>
+        <!-- <i class="fas fa-plus menu-btn-icon"></i> -->
       </div>
     </nav>
   </header>
@@ -181,11 +187,12 @@
             </div>
           </li>
         </ul>
-
-        <h2 class="highlight section-lg-texts">
-          Your website deserve the best because its the internet advertising
-          bilboard for your company
-        </h2>
+        <aside>
+          <h2 class="highlight section-lg-texts">
+            Your website deserve the best because its the internet advertising
+            billboard for your company
+          </h2>
+        </aside>
       </div>
     </section>
 
@@ -207,72 +214,95 @@
       </div>
     </section>
 
-    <section class="our-team wrapper pageSection">
-      <div class="text-center">
-        <div class="section-title-container text-center">
-          <h2 class="section-title">Our team</h2>
-          <h6 class="highlight">
-            You have "the next big app idea"?, we have a great team to develop
-            it
-          </h6>
-        </div>
-        <div class="wrapper"></div>
+    <section class="our_team_alt wrapper pageSection">
+      <div class="section-title-container text-center">
+        <h2 class="section-title">Our team</h2>
+        <h5 class="highlight">
+          You have "the next big app idea"?, we have a great team to develop
+          it
+        </h5>
+      </div>
+      <div class="slider_wrapper">
+        <!-- Owl carousel -->
+        <div class="owl-carousel owl-theme team_slider">
 
-        <div class="team-members-grid">
-          <div class="card-shadow team-member-card team-member-card-animate">
-            <img data-src="./images/ib.png" alt="Ibrahim Alli's image" />
-            <div>
-              <p class="member-name">
-                Alli Ibrahim
-              </p>
-              <p class="title">Fontend Developer</p>
+          <div>
+            <div class="card-shadow team_card">
+              <img data-src="./images/ib.png" alt="Ibrahim Alli's image" />
+              <div>
+                <p class="member-name">
+                  Alli Ibrahim
+                  <br />
+                  <span class="title">Fontend Developer</span>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card-shadow team-member-card team-member-card-animate">
-            <img data-src="./images/ay.png" alt="Ayokunle's image" />
-            <div>
-              <p class="member-name">
-                Ayokunle
-              </p>
-              <p class="title">Backend Developer</p>
+          <div>
+            <div class="card-shadow team_card">
+              <img data-src="./images/ay.png" alt="Ayokunle's image" />
+              <div>
+                <p class="member-name">
+                  Ayokunle
+                  <br />
+                  <span class="title">Backend Developer</span>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card-shadow team-member-card team-member-card-animate">
-            <img data-src="./images/dele.png" alt="Dele Agboola's image" />
-            <div>
-              <p class="member-name">
-                Dele Agboola
-              </p>
-              <p class="title">Tech Director</p>
+          <div>
+            <div class="card-shadow team_card">
+              <img data-src="./images/dele.png" alt="Dele Agboola's image" />
+              <div>
+                <p class="member-name">
+                  Dele Agboola
+                  <br />
+                  <span class="title">Tech Director</span>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card-shadow team-member-card team-member-card-animate">
-            <img data-src="./images/tobi.png" alt="Tobi Akinola's image" />
-            <div>
-              <p class="member-name">
-                Akinola Tobi
-              </p>
-              <p class="title">UI Designer</p>
+          <div>
+            <div class="card-shadow team_card">
+              <img data-src="./images/tobi.png" alt="Tobi Akinola's image" />
+              <div>
+                <p class="member-name">
+                  Akinola Tobi
+                  <br />
+                  <span class="title">UI Designer</span>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card-shadow team-member-card team-member-card-animate">
-            <img data-src="./images/ay.png" alt="Ayokunle's image" />
-            <div>
-              <p class="member-name">
-                Andu Ekeng
-              </p>
-              <p class="title">Business Developer</p>
+          <div>
+            <div class="card-shadow team_card">
+              <img data-src="./images/ay.png" alt="Ayokunle's image" />
+              <div>
+                <p class="member-name">
+                  Andu Ekeng
+                  <br />
+                  <span class="title">Business Developer</span>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card-shadow team-member-card team-member-card-animate">
-            <img data-src="./images/ib.png" alt="Alli Ibrahim's image" />
-            <div>
-              <p class="member-name">
-                Enebeli Kelvin
-              </p>
-              <p class="title">Graphics Designer</p>
+          <div>
+            <div class="card-shadow team_card">
+              <img data-src="./images/ib.png" alt="Alli Ibrahim's image" />
+              <div>
+                <p class="member-name">
+                  Enebeli Kelvin
+                  <br />
+                  <span class="title">Graphics Designer</span>
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div class="custom_nav">
+          <div class="prev_nav"></div>
+          <div class="next_nav"></div>
         </div>
       </div>
     </section>
@@ -362,28 +392,36 @@
           </figure>
         </div>
       </div>
+    </section>
 
-      <div class="wrapper success_counter">
-        <h4>Our Success in Summary</h4>
-        <div class="demo">
-          <div>Projects
-            <div class="readers">
-              <span class="counter">
-                53
-              </span>
+    <section class="counters">
+      <div class="wrapper">
+
+        <div class="wrapper success_counter">
+          <!-- <h4>Our Success in Summary</h4> -->
+          <div class="demo">
+            <div>
+              <div class="count_title" id="projects">Projects</div>
+              <div class="readers">
+                <span class="counter">
+                  53
+                </span>
+              </div>
             </div>
-          </div>
-          <div>CLients
-            <div class="readers">
-              <span class="counter">
-                23
-              </span>
+            <div>
+              <div class="count_title" id="clients">CLients</div>
+              <div class="readers">
+                <span class="counter">
+                  23
+                </span>
+              </div>
             </div>
-          </div>
-          <div>Sucess Rate
-            <div class="readers">
-              <span class="counter">100
-              </span><span>%</span></div>
+            <div>
+              <div class="count_title" id="success">Success Rate</div>
+              <div class="readers">
+                <span class="counter">100
+                </span><span>%</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -529,6 +567,8 @@
     })();
   </script>
   <!--  -->
+  <!-- owl carousel -->
+  <script src="./js/plugins/owl_carousel/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

@@ -32,7 +32,7 @@ body {
     padding: 0;
     // font-family: Arial, Helvetica, sans-serif;
     font-family: "Lato", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -50,10 +50,10 @@ h6 {
     line-height: inherit;
     padding: 0;
     text-align: inherit;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: -0.0415625em;
-    line-height: 1.25;
-    margin: 2.3rem 0 1.6rem;
+    line-height: 1;
+    margin: 1.3rem 0 0.6rem;
 }
 
 h1,
@@ -65,27 +65,27 @@ h1,
 
 h2,
 .heading-size-2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
 }
 
 h3,
 .heading-size-3 {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 }
 
 h4,
 .heading-size-4 {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 h5,
 .heading-size-5 {
-    font-size: 2.1rem;
+    font-size: 1.3rem;
 }
 
 h6,
 .heading-size-6 {
-    font-size: 1.6rem;
+    font-size: 0.8rem;
     letter-spacing: 0.03125em;
     // text-transform: uppercase;
 }
@@ -131,7 +131,7 @@ li {
 
 .highlight {
     color: $main-clr-shade;
-    letter-spacing: 2px;
+    letter-spacing: 1.4px;
 }
 .section-title {
     display: inline-block;
@@ -180,6 +180,10 @@ li {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        .fas {
+            // transform: rotate(45deg);
+            font-size: 1.2rem;
+        }
     }
 
     .nav-tab {
@@ -255,6 +259,7 @@ li {
     height: 100vh;
     background-color: var(--clr-black);
     background-image: url("../images/hero-image.png");
+    background-attachment: fixed;
     background-size: cover;
     background-blend-mode: soft-light;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 48% 100%, 0 calc(100% - 5vw));
@@ -439,6 +444,70 @@ li {
     }
 }
 
+//
+.our_team_alt {
+    .slider_wrapper {
+        position: relative;
+    }
+    .team_slider {
+        div {
+            padding: 0.2em 0;
+        }
+    }
+    .team_card {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1em 0;
+        text-align: center;
+        img {
+            width: 150px;
+            clip-path: circle(40% at 50% 50%);
+            margin: 0 auto;
+        }
+        .member-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+    .owl-theme .owl-dots .owl-dot.active span {
+        background-color: $main-clr-secondary;
+    }
+    .custom_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 40%;
+        z-index: 2;
+        .prev_nav,
+        .next_nav {
+            cursor: pointer;
+            opacity: 0.3;
+            transition: all 300ms ease-in-out;
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 3rem;
+                color: $main-clr-shade;
+                cursor: pointer;
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .prev_nav::before {
+            content: "\f104";
+        }
+        .next_nav::before {
+            content: "\f105";
+        }
+    }
+}
+
 .why-choose-us {
     padding-top: 5vw;
     .why-choose-us-inner-grid {
@@ -565,23 +634,71 @@ li {
 
     .submit-btn {
         background-color: $main-clr-secondary;
-        transition: background-color 250ms ease;
-        padding: 0.5em 1.7em;
+        transition: all 250ms ease;
+        padding: 0.7em 1.9em;
         font-size: 1rem;
         color: var(--clr-white);
         border: none;
         cursor: pointer;
 
         &:hover {
-            background-color: $main-clr-secondary;
-            transition: background-color 250ms ease;
+            background-color: $main-clr-shade;
         }
         &:focus {
             box-shadow: inset 0 0 0 3px white;
             border: 1px solid $main-clr-secondary;
-            transition: box-shadow 250ms ease;
-            transition: border 250ms ease;
         }
+    }
+}
+
+// Counter plugin
+.counters {
+    margin-top: 2em;
+    background-color: rgba(37, 7, 7, 0.9);
+    background-image: url("../images/hero-image.png");
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $main-clr-secondary;
+
+    .count_title::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 0.5em;
+        color: $main-clr-shade;
+    }
+
+    #projects::before {
+        content: "\f0ae";
+    }
+    #clients::before {
+        content: "\f0c0";
+    }
+    #success::before {
+        content: "\f46c";
+    }
+    .counter {
+        color: #ffffff;
+    }
+}
+.success_counter {
+    text-align: center;
+    font-weight: lighter;
+}
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > div {
+        margin: 1.4em auto;
+        font-size: 1.2rem;
+    }
+    span.readers {
+        display: block;
+    }
+    span.counter {
+        font-size: 2rem;
     }
 }
 
@@ -679,9 +796,81 @@ footer {
         display: flex;
         margin-bottom: 1em;
     }
+    .top-header .nav-tab {
+        justify-self: unset;
+    }
+    .top-header .nav-tab .nav-link,
+    .top-header .nav-tab .call-to-action {
+        font-size: 0.8rem;
+    }
+    .top-header .nav-tab .call-to-action {
+    }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 750px) {
+    /* -------------------------------------------------------------------------- */
+
+    /*	Typography
+    /* -------------------------------------------------------------------------- */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+        letter-spacing: -0.0415625em;
+        line-height: 1.25;
+        margin: 2.3rem 0 1.6rem;
+    }
+
+    h1,
+    .heading-size-1 {
+        font-size: 3.2rem;
+        font-weight: 800;
+        line-height: 1.138888889;
+    }
+
+    h2,
+    .heading-size-2 {
+        font-size: 2.8rem;
+    }
+
+    h3,
+    .heading-size-3 {
+        font-size: 2.4rem;
+    }
+
+    h4,
+    .heading-size-4 {
+        font-size: 2rem;
+    }
+
+    h5,
+    .heading-size-5 {
+        font-size: 2.1rem;
+    }
+
+    h6,
+    .heading-size-6 {
+        font-size: 1.6rem;
+        letter-spacing: 0.03125em;
+        // text-transform: uppercase;
+    }
+
+    p {
+        line-height: 1.5;
+        margin: 0 0 1em 0;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .highlight {
+        color: $main-clr-shade;
+        letter-spacing: 2px;
+    }
     .top-header {
         .main-nav {
             display: grid;
@@ -742,33 +931,25 @@ footer {
         }
     }
 
+    // Counter plugin
+    .success_counter {
+        text-align: center;
+        font-weight: lighter;
+    }
+    .demo {
+        div {
+            font-size: 2rem;
+        }
+        span.counter {
+            font-size: 3rem;
+        }
+    }
+
     footer {
         .footer-inner {
             &:first-child {
                 margin-right: 4em;
             }
         }
-    }
-}
-
-// Counter plugin
-.success_counter {
-    text-align: center;
-    font-weight: lighter;
-}
-.demo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    div {
-        margin: 20px auto;
-        font-size: 2rem;
-        font-family: "Pacifico";
-    }
-    span.readers {
-        display: block;
-    }
-    span.counter {
-        font-size: 3rem;
     }
 }

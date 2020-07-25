@@ -5,12 +5,18 @@ $(document).ready(function () {
     $(".menu-btn").on("click", function () {
         if (x == false) {
             $(".nav-tab").show(1000)
-            $(".menu-btn-icon").css({ "transform": "rotate(90deg)", "transition": "transform 250ms ease-in-out", "transform-origin": "left" })
+            $(".menu-btn-icon").css({ "transform": "rotate(45deg)", "transition": "transform 250ms ease-in-out", "transform-origin": "left" });
+            // console.log($(this).children())
+            $(this).children().removeClass("fa-bars");
+            $(this).children().addClass("fa-plus");
+
             $(".top-header").addClass("bg-success")
             x = true
         } else if (x == true) {
             $(".nav-tab").hide(1000)
-            $(".menu-btn-icon").css({ "transform": "rotate(0deg)", "transition": "transform 250ms ease-in-out", "transform-origin": "right" })
+            $(".menu-btn-icon").css({ "transform": "rotate(0deg)", "transition": "transform 250ms ease-in-out", "transform-origin": "right" });
+            $(this).children().addClass("fa-bars");
+            $(this).children().removeClass("fa-plus");
             x = false
         }
     })
@@ -40,7 +46,37 @@ $(document).ready(function () {
         $(this).parent(".form-grp").css({ "border-bottom": "2px solid #ec0033" })
     })
 
+    $(".team_slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+            },
+            600: {
+                items: 2,
+                dots: true,
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+    var owl = $('.team_slider');
+    owl.owlCarousel();
+    // Go to the previous item
+    $(".prev_nav").click(function () {
+        owl.trigger('prev.owl.carousel', [800]);
+    })
+    // Go to the next item
+    $(".next_nav").click(function () {
+        owl.trigger('next.owl.carousel', [800]);
+    })
+
 })
+
 
 
 // animate header element on scroll
@@ -65,7 +101,13 @@ sectionOneObserver.observe(sectionOne)
 
 
 
+// animate hero texts and button
+
+
+
+
 // animate hero texts and butoon
+
 const heroTexts = document.querySelector(".hero-texts")
 const heroBtn = document.querySelector(".hero-btn")
 const heroObserverOption = {
@@ -192,88 +234,76 @@ images.forEach(image => {
 
 // main navigation links activation
 // observing main navigation active links
+
+var pageElementObj = [
+    {
+        elementName: "hero",
+        link: "hero-link",
+        className: "active",
+    },
+    {
+        elementName: "what-we-do",
+        link: "what-we-do-link",
+        className: "active",
+    },
+    {
+        elementName: "about-us",
+        link: "about-us-link",
+        className: "active",
+    },
+    {
+        elementName: "portfolio",
+        link: "portfolio-link",
+        className: "active",
+    },
+    {
+        elementName: "contact-us",
+        link: "",
+        className: "active",
+    }
+]
+pageElementObj.forEach(elementObj => {
+    console.log(elementObj)
+})
+
 const pageSections = document.querySelectorAll(".pageSection")
 const sectionOption = {
     thresholds: 1,
     rootMargin: "-300px"
 }
 
-
 const pageSectionObserver = new IntersectionObserver((entries, pageSectionObserver) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
         }
-        if (entry.target.id === "hero") {
-            let navLists = document.querySelectorAll(".nav-list")
-            navLists.forEach(link => {
-                if (link.id === "hero-link") {
-                    link.classList.add("active")
-                    let contactBtn = document.getElementById("contact-us-link-btn")
-                    contactBtn.classList.remove("active")
-                    for (let sibling of link.parentNode.children) {
-                        link.classList.add("active")
-                        if (sibling !== this) sibling.classList.remove('active');
+
+        pageElementObj.forEach(elementObj => {
+            // console.log(elementObj)
+            if (entry.target.id === elementObj.elementName) {
+                let navLists = document.querySelectorAll(".nav-list")
+                navLists.forEach(link => {
+                    if (link.id === elementObj.link) {
+                        link.classList.add(elementObj.className)
+                        let contactBtn = document.getElementById("contact-us-link-btn")
+                        contactBtn.classList.remove(elementObj.className)
+                        for (let sibling of link.parentNode.children) {
+                            link.classList.add(elementObj.className)
+                            if (sibling !== this) sibling.classList.remove(elementObj.className);
+                        }
                     }
-                }
-            })
-        }
-        if (entry.target.id === "what-we-do") {
-            let navLists = document.querySelectorAll(".nav-list")
-            navLists.forEach(link => {
-                if (link.id === "what-we-do-link") {
-                    link.classList.add("active")
-                    let contactBtn = document.getElementById("contact-us-link-btn")
-                    contactBtn.classList.remove("active")
-                    for (let sibling of link.parentNode.children) {
-                        link.classList.add("active")
-                        if (sibling !== this) sibling.classList.remove('active');
-                    }
-                }
-            })
-        }
-        if (entry.target.id === "about-us") {
-            const navLists = document.querySelectorAll(".nav-list")
-            navLists.forEach(link => {
-                if (link.id === "about-us-link") {
-                    link.classList.add("active")
-                    let contactBtn = document.getElementById("contact-us-link-btn")
-                    contactBtn.classList.remove("active")
-                    for (let sibling of link.parentNode.children) {
-                        link.classList.add("active")
-                        if (sibling !== this) sibling.classList.remove('active');
-                    }
-                }
-            })
-        }
-        if (entry.target.id === "portfolio") {
-            const navLists = document.querySelectorAll(".nav-list")
-            navLists.forEach(link => {
-                if (link.id === "portfolio-link") {
-                    link.classList.add("active")
-                    let contactBtn = document.getElementById("contact-us-link-btn")
-                    contactBtn.classList.remove("active")
-                    for (let sibling of link.parentNode.children) {
-                        link.classList.add("active")
-                        if (sibling !== this) sibling.classList.remove('active');
-                    }
-                }
-            })
-        }
-        if (entry.target.id === "contact-us") {
-            let contactBtn = document.getElementById("contact-us-link-btn")
-            contactBtn.classList.add("active")
-            let navLists = document.querySelectorAll(".nav-list")
-            navLists.forEach(link => {
-                // if (link.id === "portfolio-link") {
-                link.classList.remove("active")
-                // for (let sibling of link.parentNode.children) {
-                //     link.classList.add("active")
-                //     if (sibling !== this) sibling.classList.remove('active');
-                //     }
-                // }
-            })
-        }
+                })
+            }
+            // specially for the nav button
+            if (entry.target.id === "contact-us") {
+                let contactBtn = document.getElementById("contact-us-link-btn")
+                contactBtn.classList.add("active")
+                let navLists = document.querySelectorAll(".nav-list")
+                navLists.forEach(link => {
+                    link.classList.remove("active")
+                })
+            }
+        })
     })
 }, sectionOption)
 pageSections.forEach(section => {
