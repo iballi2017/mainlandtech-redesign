@@ -180,7 +180,8 @@ li {
   font-weight: bolder;
   border-radius: 3px;
   padding: 1em;
-  width: 150px; }
+  width: 150px;
+  cursor: pointer; }
   .call-to-action:hover {
     background-color: #ec0033;
     border: 3px solid var(--clr-white);
@@ -208,7 +209,8 @@ li {
     padding-top: 3em; }
     .hero .hero-inner h2 {
       color: var(--clr-white);
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      width: unset; }
     .hero .hero-inner .hero-texts {
       transform: translateY(-100px); }
     .hero .hero-inner .hero-btn {
@@ -576,7 +578,10 @@ footer {
 
   .top-header .nav-tab .nav-link,
   .top-header .nav-tab .call-to-action {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem; }
+
+  .hero .hero-inner h2 {
+    width: 100%; } }
 @media (min-width: 750px) {
   /* -------------------------------------------------------------------------- */
   /*	Typography
@@ -651,10 +656,6 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding-top: 3em; }
-    .hero .hero-inner h2 {
-      width: 60%;
-      color: var(--clr-white);
-      letter-spacing: 2px; }
 
   .success_counter {
     text-align: center;
@@ -667,5 +668,10 @@ footer {
 
   footer .footer-inner:first-child {
     margin-right: 4em; } }
+@media (min-width: 900px) {
+  .hero .hero-inner h2 {
+    width: 70%;
+    color: var(--clr-white);
+    letter-spacing: 2px; } }
 
 /*# sourceMappingURL=main.css.map */

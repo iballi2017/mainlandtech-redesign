@@ -313,12 +313,12 @@ pageSections.forEach(section => {
 
 
 
-// jquery counter plugin
-// < !--
-google_ad_client = "ca-pub-2783044520727903";
-/* jQuery_demo */
-google_ad_slot = "2780937993";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
+// // jquery counter
+// // < !--
+// google_ad_client = "ca-pub-2783044520727903";
+// /* jQuery_demo */
+// google_ad_slot = "2780937993";
+// google_ad_width = 728;
+// google_ad_height = 90;
+// //-->
 

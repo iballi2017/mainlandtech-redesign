@@ -237,12 +237,11 @@ li {
     border-radius: 3px;
     padding: 1em;
     width: 150px;
+    cursor: pointer;
 
     &:hover {
         background-color: $main-clr-secondary;
         border: 3px solid var(--clr-white);
-        // transition: background-color 250ms ease-in-out;
-        // transition: border 250ms ease-in-out;
         color: var(--clr-white);
     }
     &:focus,
@@ -273,6 +272,7 @@ li {
         h2 {
             color: var(--clr-white);
             letter-spacing: 2px;
+            width: unset;
         }
 
         .hero-texts {
@@ -803,6 +803,14 @@ footer {
     .top-header .nav-tab .call-to-action {
         font-size: 0.8rem;
     }
+
+    .hero {
+        .hero-inner {
+            h2 {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (min-width: 750px) {
@@ -921,15 +929,10 @@ footer {
             justify-content: center;
             flex-direction: column;
             padding-top: 3em;
-            h2 {
-                width: 60%;
-                color: var(--clr-white);
-                letter-spacing: 2px;
-            }
         }
     }
 
-    // Counter plugin
+    // Counters
     .success_counter {
         text-align: center;
         font-weight: lighter;
@@ -947,6 +950,18 @@ footer {
         .footer-inner {
             &:first-child {
                 margin-right: 4em;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .hero {
+        .hero-inner {
+            h2 {
+                width: 70%;
+                color: var(--clr-white);
+                letter-spacing: 2px;
             }
         }
     }
