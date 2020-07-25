@@ -83,7 +83,7 @@ $(document).ready(function () {
 
     // Portfolio projects slider
     $(".projects_slider").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 15,
         dots: true,
         dotsEach: true,
@@ -93,7 +93,6 @@ $(document).ready(function () {
             },
             600: {
                 items: 2,
-                dots: true,
             },
             1000: {
                 items: 3

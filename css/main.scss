@@ -543,53 +543,6 @@ li {
 
 #portfolio {
     padding-top: 4vw;
-    .portfolio-inner {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 30px;
-
-        div:nth-child(even) {
-            background: var(--clr-black);
-        }
-
-        .portfolio-item {
-            margin: 0;
-            position: relative;
-
-            a:focus {
-                img {
-                    border: 3px solid $main-clr-secondary;
-                    transition: border 250ms ease-in-out;
-                }
-            }
-
-            img {
-                width: 100%;
-            }
-
-            figcaption {
-                height: 100%;
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.8);
-                color: var(--clr-white);
-                top: 0;
-                width: 100%;
-                display: grid;
-                justify-items: center;
-                place-content: center;
-                transform: scaleX(0);
-                transform-origin: right;
-                transition: transform 250ms ease-in-out;
-            }
-
-            &:hover figcaption {
-                transform: scaleX(1);
-                transform-origin: left;
-                transition: transform 250ms ease-in-out;
-            }
-        }
-    }
-}
 .portfolio-item {
     margin: 0;
     height: 300px;
@@ -629,6 +582,7 @@ li {
     }
 }
 
+}
 #contact-us {
     padding-top: 4vw;
     form {
