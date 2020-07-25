@@ -50,10 +50,14 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         dots: false,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        autoplaySpeed: 1400,
         responsive: {
             0: {
                 items: 1,
                 dots: true,
+                dotsEach: true,
             },
             600: {
                 items: 2,
@@ -106,7 +110,7 @@ sectionOneObserver.observe(sectionOne)
 
 
 
-// animate hero texts and butoon
+// animate hero texts and button
 
 const heroTexts = document.querySelector(".hero-texts")
 const heroBtn = document.querySelector(".hero-btn")
@@ -262,9 +266,6 @@ var pageElementObj = [
         className: "active",
     }
 ]
-pageElementObj.forEach(elementObj => {
-    console.log(elementObj)
-})
 
 const pageSections = document.querySelectorAll(".pageSection")
 const sectionOption = {
