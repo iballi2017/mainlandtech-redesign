@@ -324,6 +324,9 @@ li {
   transition: transform 650ms ease-in-out;
   transition-timing-function: ease-in-out; }
 
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #ec0033; }
+
 .our_team_alt .slider_wrapper {
   position: relative; }
 .our_team_alt .team_slider div {
@@ -340,8 +343,6 @@ li {
   .our_team_alt .team_card .member-name {
     font-size: 1.2rem;
     font-weight: 600; }
-.our_team_alt .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #ec0033; }
 .our_team_alt .custom_nav {
   display: flex;
   justify-content: space-between;
@@ -427,6 +428,34 @@ li {
         transform: scaleX(1);
         transform-origin: left;
         transition: transform 250ms ease-in-out; }
+
+.portfolio-item {
+  margin: 0;
+  height: 300px;
+  position: relative; }
+  .portfolio-item a:focus img {
+    border: 3px solid #ec0033;
+    transition: border 250ms ease-in-out; }
+  .portfolio-item img {
+    width: 100%;
+    height: 100%; }
+  .portfolio-item figcaption {
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--clr-white);
+    top: 0;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    place-content: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in-out; }
+  .portfolio-item:hover figcaption {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 250ms ease-in-out; }
 
 #contact-us {
   padding-top: 4vw; }

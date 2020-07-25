@@ -46,6 +46,7 @@ $(document).ready(function () {
         $(this).parent(".form-grp").css({ "border-bottom": "2px solid #ec0033" })
     })
 
+    // Portfolio team cards slider
     $(".team_slider").owlCarousel({
         loop: true,
         margin: 10,
@@ -77,7 +78,28 @@ $(document).ready(function () {
     // Go to the next item
     $(".next_nav").click(function () {
         owl.trigger('next.owl.carousel', [800]);
-    })
+    });
+
+
+    // Portfolio projects slider
+    $(".projects_slider").owlCarousel({
+        loop: true,
+        margin: 15,
+        dots: true,
+        dotsEach: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+                dots: true,
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
 
 })
 
