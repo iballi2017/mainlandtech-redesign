@@ -103,7 +103,7 @@ $(document).ready(function () {
     // news slider
     $(".news_slider").owlCarousel({
         loop: true,
-        margin: 15,
+        margin: 30,
         dots: false,
         dotsEach: false,
         items: 1,
