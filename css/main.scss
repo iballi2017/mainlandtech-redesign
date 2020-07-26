@@ -698,6 +698,11 @@ li {
         h4 {
             margin: 0;
         }
+        .new_img_wrapper {
+            ~ div {
+                margin-top: 0.4em;
+            }
+        }
         .news_title_wrapper {
             a {
                 color: $main-clr-secondary;

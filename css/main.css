@@ -514,6 +514,8 @@ li {
   margin: 1em; }
   #news .item_inner h4 {
     margin: 0; }
+  #news .item_inner .new_img_wrapper ~ div {
+    margin-top: 0.4em; }
   #news .item_inner .news_title_wrapper a {
     color: #ec0033;
     transition: all 300ms ease-in-out; }
