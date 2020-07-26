@@ -125,17 +125,6 @@ $(document).ready(function () {
 
 })
 
-var new_img_containers = document.querySelectorAll(".new_img_wrapper");
-// console.log(new_img_containers);
-new_img_containers.forEach(img_cont => {
-    console.log(img_cont.children);
-    if (!img_cont.children) {
-        let x = document.createElement("div");
-        this.append.x;
-        console.log(this)
-    }
-})
-
 
 // animate header element on scroll
 const nav = document.querySelector(".top-header");;
