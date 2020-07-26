@@ -510,6 +510,16 @@ li {
   .demo span.counter {
     font-size: 2rem; }
 
+#news {
+  margin: 1em; }
+  #news .item_inner h4 {
+    margin: 0; }
+  #news .item_inner .news_title_wrapper a {
+    color: #ec0033;
+    transition: all 300ms ease-in-out; }
+    #news .item_inner .news_title_wrapper a:hover, #news .item_inner .news_title_wrapper a:focus {
+      color: #3d0313; }
+
 footer {
   background-color: var(--clr-black);
   color: var(--clr-white);

@@ -543,45 +543,44 @@ li {
 
 #portfolio {
     padding-top: 4vw;
-.portfolio-item {
-    margin: 0;
-    height: 300px;
-    position: relative;
+    .portfolio-item {
+        margin: 0;
+        height: 300px;
+        position: relative;
 
-    a:focus {
+        a:focus {
+            img {
+                border: 3px solid $main-clr-secondary;
+                transition: border 250ms ease-in-out;
+            }
+        }
+
         img {
-            border: 3px solid $main-clr-secondary;
-            transition: border 250ms ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        figcaption {
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: var(--clr-white);
+            top: 0;
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            place-content: center;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 250ms ease-in-out;
+        }
+
+        &:hover figcaption {
+            transform: scaleX(1);
+            transform-origin: left;
+            transition: transform 250ms ease-in-out;
         }
     }
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-
-    figcaption {
-        height: 100%;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: var(--clr-white);
-        top: 0;
-        width: 100%;
-        display: grid;
-        justify-items: center;
-        place-content: center;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 250ms ease-in-out;
-    }
-
-    &:hover figcaption {
-        transform: scaleX(1);
-        transform-origin: left;
-        transition: transform 250ms ease-in-out;
-    }
-}
-
 }
 #contact-us {
     padding-top: 4vw;
@@ -692,6 +691,25 @@ li {
     span.counter {
         font-size: 2rem;
     }
+}
+
+#news {
+    .item_inner {
+        h4 {
+            margin: 0;
+        }
+        .news_title_wrapper {
+            a {
+                color: $main-clr-secondary;
+                transition: all 300ms ease-in-out;
+                &:hover,
+                &:focus {
+                    color: $main-clr-shade;
+                }
+            }
+        }
+    }
+    margin: 1em;
 }
 
 footer {

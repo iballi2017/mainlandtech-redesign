@@ -100,8 +100,30 @@ $(document).ready(function () {
         }
     });
 
-})
+    // news slider
+    $(".news_slider").owlCarousel({
+        loop: true,
+        margin: 15,
+        dots: false,
+        dotsEach: false,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        autoplaySpeed: 3000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
 
+})
 
 
 // animate header element on scroll
